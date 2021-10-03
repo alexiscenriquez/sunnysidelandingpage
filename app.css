@@ -4,6 +4,11 @@
     --dgBlue: hsl(232, 10%, 55%);
     --gBlue:hsl(210, 4%, 67%);
     --white:hsl(0, 0%, 100%);
+    --sRed:hsl(7, 99%, 70%);
+    --yellow:hsl(51, 100%, 49%);
+    --ddCyan:hsl(167, 40%, 24%);
+    --dBlue: hsl(198, 62%, 26%);
+    --dmCyan:hsl(168, 34%, 41%);
 }
 body{
     margin: 0;
@@ -20,28 +25,60 @@ header{
     display: flex;
     justify-content: space-between;
 }
-#logo{
+.logo{
     height: 20px;
     width: 130px;
     background: url("images/logo.svg");
     background-repeat: no-repeat;
+    padding-bottom: 30px;
 }
 #links a{
-    text-decoration: none;
     color: white;
     visibility: hidden;
 }
+#footer-nav a,  footer .logo{
+    color: var(--ddCyan);
+}
+footer .logo{
+    margin: auto;
+    fill:var(--ddCyan);
+}
+#footer-nav{
+    display: flex;
+    
+    justify-self: center;
+    justify-content: space-around;
+
+margin: auto;
+}
+a{
+    text-decoration: none;
+}
 h1{
-    font-family: 'Fraunces', serif;
+  
     text-transform: uppercase;
     margin: auto;
+    font-weight: 900;
+    font-size: 2em;
+    letter-spacing: 4px;
+    word-spacing: 5px;
 }
 h2{
     color: var(--vdDesat);
+
+}
+h3{
+    font-weight: 900;
+}
+h1,h2,h3,h4,.learn{
     font-family: 'Fraunces', serif;
-}.desc{
-    font-family: 'Barlow', sans-serif;
-    
+}
+h4{
+    color: var(--gBlue);
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+  
 }
 #arrow{
     background-image: url("images/icon-arrow-down.svg");
@@ -55,13 +92,99 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.desc,.desc2{
+    font-family: 'Barlow', sans-serif;
+    line-height: 25px;
+}
 .desc{
     color: var(--dgBlue);
+   
+}
+.desc2{    
+font-size: 0.9em;
+}
+#g-design {
+color: var(--ddCyan);
+}
+#photog {
+    color: var(--dBlue);
+}
+#g-p .squares{
+    display: flex;
+    align-items: flex-end;
 }
 
+#profiles{
+    display: flex;
+}
+.pp{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-size:contain;
+    margin: auto;
+}
+#emily .pp{
+    background-image: url("images/image-emily.jpg");
+}
+#thomas .pp{
+    background-image: url("images/image-thomas.jpg");
+}
+#jennie .pp{
+    background-image: url("images/image-jennie.jpg");
+}
+.t-desc{    font-family: 'Barlow', sans-serif; 
+    color: var(--dgBlue);
+}
+.learn{
+    text-transform: uppercase;
+font-size: 0.8em;
+}
+
+.underline{
+margin: auto;
+    height: 10px;
+    width: 120px;
+    
+  
+    border-radius: 50px;
+    background: linear-gradient(180deg,hsla(51, 100%, 49%, 0.39), hsla(51, 100%, 49%, 0.39));
+}
+.name{
+    font-family: 'Fraunces', serif;
+    
+}
+.position{
+    font-family: 'Barlow', sans-serif; 
+    color: var(--gBlue);
+    margin-top: 15px;
+}
+#pics{
+    display: grid;
+}
+#milk{
+    background-image: url("images/mobile/image-gallery-milkbottles.jpg");
+}
+#orange{
+    background-image: url("images/mobile/image-gallery-orange.jpg");
+}
+#ic{
+    background-image: url("images/mobile/image-gallery-cone.jpg");
+}
+#sugar{
+    background-image: url("images/mobile/image-gallery-sugar-cubes.jpg");
+}
+.items{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 @media(max-width:700px){
+    .t-desc{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 .wrapper{
-    grid-template-rows: 500px 1800px 400px 400px 400px ;
+    grid-template-rows: 500px 2600px 1100px 400px 300px ;
     text-align: center;
 }
 
@@ -87,14 +210,21 @@ h2{
     
 }
 .squares{
-    height: 600px;
+    height: 700px;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+#g-p .squares{
+height: 600px;
 }
 header{
   background-size: cover;
   background-position: bottom;
  
+}
+#clients{
+    padding:40px 30px
 }
 #nav{
     margin: 15px;
@@ -103,11 +233,7 @@ header{
 }
 h1{
     width: 90%;
-    font-size: 2em;
-    letter-spacing: 4px;
-    word-spacing: 5px;
     margin-top: 60px;
-   font-weight: 900;
 }
 h2{
 margin-bottom: 30px;
@@ -115,16 +241,40 @@ width: 80%;
 margin: auto;
 
 }
+
 .inner-square{
-    padding:50px 20px 50px 20px
+    padding:50px 30px 50px 30px
 }
 .desc{
     padding-top: 25px;
     padding-bottom: 25px;
+    line-height: 1.5em;
 }
 
-#g-p .squares{
-    display: flex;
-    align-items: flex-end;
+#profiles{
+    flex-direction: column;
+   
+}
+.tes{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+#pics{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+}
+#g-design, #photog{
+    background-size: cover;
+    
+}
+footer{
+    background-color: var(--dmCyan);
+    padding-top: 30px;
+}
+#footer-nav{
+    width: 70%;
+}
+#logo{
+    margin: auto;
 }
 }
