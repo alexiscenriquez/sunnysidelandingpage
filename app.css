@@ -8,7 +8,7 @@
   --yellow: hsl(51, 100%, 49%);
   --ddCyan: hsl(167, 40%, 24%);
   --dBlue: hsl(198, 62%, 26%);
-  --dmCyan: hsl(168, 34%, 41%);
+  --dmCyan: #9AD9C7
 }
 body {
   margin: 0;
@@ -45,7 +45,7 @@ footer .logo {
   margin: auto;
 }
 footer {
-  background-color: hsla(168, 34%, 41%, 0.575);;
+  background-color: var(--dmCyan);
 }
 #footer-nav {
   display: flex;
@@ -83,6 +83,15 @@ h3,
 h4,
 .learn {
   font-family: "Fraunces", serif;
+}
+.logos svg{
+  fill:var(--ddCyan);
+}
+.logos svg:hover{
+  fill: white;
+}
+.logos:hover{
+  cursor: pointer;
 }
 h4 {
   color: var(--gBlue);
@@ -207,6 +216,7 @@ h2{
     width: 100%;
     height: 300px;
   }
+
   .img:first-child {
     background-image: url("images/mobile/image-transform.jpg");
   }
