@@ -33,9 +33,17 @@ header {
   background-repeat: no-repeat;
   padding-bottom: 30px;
 }
+a{
+  font-family: "Barlow", sans-serif;
+}
 #links a {
   color: white;
-  visibility: hidden;
+
+}
+#links{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
 }
 #footer-nav a,
 footer .logo {
@@ -51,8 +59,8 @@ footer {
   display: flex;
   margin: auto;
   justify-self: center;
-  justify-content: space-around;
-  font-family: "Barlow", sans-serif;
+    justify-content: space-around;
+font-family: "Barlow", sans-serif;
 }
 #footer-nav a:hover {
   color: white;
@@ -114,12 +122,14 @@ h4 {
 .desc2 {
   font-family: "Barlow", sans-serif;
   line-height: 25px;
+
 }
 .desc {
   color: var(--dgBlue);
+
 }
 .desc2 {
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 #g-design {
   color: var(--ddCyan);
@@ -154,7 +164,7 @@ h4 {
 .t-desc {
   font-family: "Barlow", sans-serif;
   color: var(--dgBlue);
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 .learn {
   text-transform: uppercase;
@@ -214,6 +224,7 @@ h2{
   }
   .img {
     width: 100%;
+    background-position: center;
     height: 300px;
   }
 
@@ -418,10 +429,14 @@ line-height: 25px;
   align-items: center;
 }
 #clients{
+ 
 padding: 100px 50px;
+
+
 }
 #profiles{
-  margin-top: 60px;
+  margin-top: 60px;  height: 100%;
+  
 }
 #tes-header{
 text-align: center;
