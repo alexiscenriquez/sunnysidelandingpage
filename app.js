@@ -1,7 +1,7 @@
 let nav = document.querySelector("#links");
 let icon;
 let links2 = document.querySelector("#links2");
-let clicked=false
+let clicked = false;
 function windowResize() {
   let w = window.innerWidth;
   if (w < 700) {
@@ -14,13 +14,13 @@ function windowResize() {
 }
 window.addEventListener("load", windowResize);
 window.addEventListener("resize", windowResize);
- 
+
 nav.addEventListener("click", () => {
-  if(clicked ===false){
-  links2.style.visibility = "visible";
-clicked=true}
-else{
-  links2.style.visibility = "hidden";
-  clicked=false
-}
+  if (clicked === false) {
+    links2.style.visibility = "visible";
+    clicked = true;
+  } else {
+    links2.style.visibility = "hidden";
+    clicked = false;
+  }
 });

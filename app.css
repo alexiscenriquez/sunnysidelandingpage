@@ -38,7 +38,7 @@ a {
 
 #links {
   display: flex;
- 
+
   justify-content: space-around;
 }
 #footer-nav a,
@@ -103,15 +103,15 @@ h4 {
   letter-spacing: 2px;
   font-weight: 700;
 }
-#links a{
+#links a {
   height: fit-content;
   padding-top: 15px;
   padding-bottom: 15px;
-width: 130px;
-    border-radius: 50px;
-    color: white;
-    font-weight: 600;
-    text-align: center;
+  width: 130px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
 }
 #arrow {
   background-image: url("images/icon-arrow-down.svg");
@@ -206,25 +206,24 @@ h2 {
   width: 50%;
   margin: auto;
 }
-#links a:hover{
-  background-color: rgba(255, 255, 255, 0.199)
-  ;
+#links a:hover {
+  background-color: rgba(255, 255, 255, 0.199);
 }
 
-#firstl{
+#firstl {
   background-image: linear-gradient(
     0deg,
     hsla(51, 100%, 49%, 0.3) 90%,
     #ffffff3b 100%
   );
 }
-#secondl{
+#secondl {
   background-image: linear-gradient(
     0deg,
-    hsl(7, 99%, 70%,0.3) ,90%,
+    hsl(7, 99%, 70%, 0.3),
+    90%,
     #ffffff3b 100%
   );
-
 }
 
 #firstl:hover {
@@ -234,10 +233,11 @@ h2 {
     #ffffff3b 100%
   );
 }
-#secondl:hover{
+#secondl:hover {
   background-image: linear-gradient(
     0deg,
-    hsl(7, 99%, 70%) ,90%,
+    hsl(7, 99%, 70%),
+    90%,
     #ffffff3b 100%
   );
 }
@@ -246,62 +246,60 @@ h2 {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #links2::before{
+  #links2::before {
     width: 0;
     height: 0;
     border-left: 20px solid transparent;
     border-right: 0px solid transparent;
     border-bottom: 20px solid rgb(255, 255, 255);
-   
+
     position: absolute;
     top: -20px;
-   right: 0;
+    right: 0;
     content: " ";
-
   }
-  #links2{
+  #links2 {
     position: absolute;
-  display: flex;
-  visibility: hidden;
-  flex-direction: column;
-  background-color: rgb(255, 255, 255);
-  justify-content: space-around;
-  align-items: center;
-  width: 50%;
-  max-width: 300px;
-  height: 250px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  right: 20px;
-  top: 80px;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    max-width: 300px;
+    height: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    right: 20px;
+    top: 80px;
   }
-  #links2 a{
+  #links2 a {
     color: var(--gBlue);
     display: block;
-   width: 100%;
-   padding-top: 15px;
-   padding-bottom: 15px;
-   transition:background-color 0.2s ease;
-      }
-      #links2 a:hover{
-        background-color: hsla(206, 4%, 67%, 0.103);
-      }
-#links2 #contact
-{
-  background-color: var(--yellow);
- color:black;
-text-transform: uppercase;
- padding:15px 20px;
- border-radius: 50px;
-  font-family: "Fraunces", serif; 
-  font-size: 0.7em;
-  width: fit-content;
-  transition:transform 0.2s ease;
-}
-#links2 #contact:hover{
-  transform: scale(1.1);
-}
-  
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: background-color 0.2s ease;
+  }
+  #links2 a:hover {
+    background-color: hsla(206, 4%, 67%, 0.103);
+  }
+  #links2 #contact {
+    background-color: var(--yellow);
+    color: black;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-family: "Fraunces", serif;
+    font-size: 0.7em;
+    width: fit-content;
+    transition: transform 0.2s ease;
+  }
+  #links2 #contact:hover {
+    transform: scale(1.1);
+  }
+
   #milk {
     background-image: url("images/mobile/image-gallery-milkbottles.jpg");
   }
@@ -325,7 +323,6 @@ text-transform: uppercase;
     width: 100%;
     background-position: center;
     height: 300px;
-   
   }
 
   .img:first-child {
@@ -361,7 +358,7 @@ text-transform: uppercase;
     padding: 40px 30px;
   }
   #nav {
-    margin:20px;
+    margin: 20px;
     margin-bottom: 0;
   }
   h1 {
@@ -412,11 +409,10 @@ text-transform: uppercase;
     margin-top: 100px;
   }
 
-  .items{
+  .items {
     background-position: center;
   }
 }
-
 
 @media (min-width: 701px) {
   .wrapper {
@@ -464,10 +460,9 @@ text-transform: uppercase;
   h2 {
     width: 60%;
   }
-  .inner-square .learn{
- 
-   align-self:flex-start;
-   margin-left: 20%;
+  .inner-square .learn {
+    align-self: flex-start;
+    margin-left: 20%;
   }
   #g-p {
     display: flex;
@@ -484,7 +479,7 @@ text-transform: uppercase;
 
     align-items: center;
   }
-  
+
   .desc2 {
     width: 70%;
   }
@@ -518,7 +513,7 @@ text-transform: uppercase;
     display: flex;
     width: 100%;
   }
-  #links{
+  #links {
     width: 20%;
   }
   .items {
@@ -565,11 +560,10 @@ text-transform: uppercase;
     margin: 20px 10px;
   }
 
-
-#links{
-  width: 40%;
-}
-#links2{
-  display: none;
-}
+  #links {
+    width: 40%;
+  }
+  #links2 {
+    display: none;
+  }
 }
