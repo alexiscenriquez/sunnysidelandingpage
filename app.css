@@ -8,7 +8,7 @@
   --yellow: hsl(51, 100%, 49%);
   --ddCyan: hsl(167, 40%, 24%);
   --dBlue: hsl(198, 62%, 26%);
-  --dmCyan: #9AD9C7
+  --dmCyan: #9ad9c7;
 }
 body {
   margin: 0;
@@ -20,7 +20,6 @@ body {
 }
 header {
   color: white;
-  
 }
 #nav {
   display: flex;
@@ -33,16 +32,13 @@ header {
   background-repeat: no-repeat;
   padding-bottom: 30px;
 }
-a{
+a {
   font-family: "Barlow", sans-serif;
 }
-#links a {
-  color: white;
 
-}
-#links{
+#links {
   display: flex;
-  width: 50%;
+ 
   justify-content: space-around;
 }
 #footer-nav a,
@@ -59,8 +55,8 @@ footer {
   display: flex;
   margin: auto;
   justify-self: center;
-    justify-content: space-around;
-font-family: "Barlow", sans-serif;
+  justify-content: space-around;
+  font-family: "Barlow", sans-serif;
 }
 #footer-nav a:hover {
   color: white;
@@ -92,13 +88,13 @@ h4,
 .learn {
   font-family: "Fraunces", serif;
 }
-.logos svg{
-  fill:var(--ddCyan);
+.logos svg {
+  fill: var(--ddCyan);
 }
-.logos svg:hover{
+.logos svg:hover {
   fill: white;
 }
-.logos:hover{
+.logos:hover {
   cursor: pointer;
 }
 h4 {
@@ -106,6 +102,16 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
+}
+#links a{
+  height: fit-content;
+  padding-top: 15px;
+  padding-bottom: 15px;
+width: 130px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
 }
 #arrow {
   background-image: url("images/icon-arrow-down.svg");
@@ -122,11 +128,9 @@ h4 {
 .desc2 {
   font-family: "Barlow", sans-serif;
   line-height: 25px;
-
 }
 .desc {
   color: var(--dgBlue);
-
 }
 .desc2 {
   font-size: 0.8em;
@@ -169,9 +173,14 @@ h4 {
 .learn {
   text-transform: uppercase;
   font-size: 0.8em;
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 98%;
+  transition: background-size 0.25s ease-in;
+  max-width: fit-content;
 }
 
-h2{
+h2 {
   font-size: 1.7em;
   font-weight: 900;
 }
@@ -197,12 +206,102 @@ h2{
   width: 50%;
   margin: auto;
 }
+#links a:hover{
+  background-color: rgba(255, 255, 255, 0.199)
+  ;
+}
 
+#firstl{
+  background-image: linear-gradient(
+    0deg,
+    hsla(51, 100%, 49%, 0.3) 90%,
+    #ffffff3b 100%
+  );
+}
+#secondl{
+  background-image: linear-gradient(
+    0deg,
+    hsl(7, 99%, 70%,0.3) ,90%,
+    #ffffff3b 100%
+  );
+
+}
+
+#firstl:hover {
+  background-image: linear-gradient(
+    0deg,
+    hsla(51, 100%, 49%) 90%,
+    #ffffff3b 100%
+  );
+}
+#secondl:hover{
+  background-image: linear-gradient(
+    0deg,
+    hsl(7, 99%, 70%) ,90%,
+    #ffffff3b 100%
+  );
+}
 @media (max-width: 700px) {
   .t-desc {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+  #links2::before{
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 20px solid rgb(255, 255, 255);
+   
+    position: absolute;
+    top: -20px;
+   right: 0;
+    content: " ";
+
+  }
+  #links2{
+    position: absolute;
+  display: flex;
+  visibility: hidden;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  max-width: 300px;
+  height: 250px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  right: 20px;
+  top: 80px;
+  }
+  #links2 a{
+    color: var(--gBlue);
+    display: block;
+   width: 100%;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   transition:background-color 0.2s ease;
+      }
+      #links2 a:hover{
+        background-color: hsla(206, 4%, 67%, 0.103);
+      }
+#links2 #contact
+{
+  background-color: var(--yellow);
+ color:black;
+text-transform: uppercase;
+ padding:15px 20px;
+ border-radius: 50px;
+  font-family: "Fraunces", serif; 
+  font-size: 0.7em;
+  width: fit-content;
+  transition:transform 0.2s ease;
+}
+#links2 #contact:hover{
+  transform: scale(1.1);
+}
+  
   #milk {
     background-image: url("images/mobile/image-gallery-milkbottles.jpg");
   }
@@ -216,7 +315,7 @@ h2{
     background-image: url("images/mobile/image-gallery-sugar-cubes.jpg");
   }
   .wrapper {
-    grid-template-rows: 600px 2600px 1100px 400px 300px;
+    grid-template-rows: 600px 2800px 1100px 400px 300px;
     text-align: center;
   }
   #arrow {
@@ -226,6 +325,7 @@ h2{
     width: 100%;
     background-position: center;
     height: 300px;
+   
   }
 
   .img:first-child {
@@ -244,27 +344,24 @@ h2{
     margin: auto;
   }
   .squares {
-    height: 700px;
+    height: 800px;
     background-size: contain;
     background-repeat: no-repeat;
-  
   }
 
   #g-p .squares {
     height: 600px;
   }
   header {
-  
-    max-height: 100%;
-  background-position: center;
     background: url("images/mobile/image-header.jpg");
     background-size: cover;
+    background-position: center;
   }
   #clients {
     padding: 40px 30px;
   }
   #nav {
-    margin: 15px;
+    margin:20px;
     margin-bottom: 0;
   }
   h1 {
@@ -284,7 +381,6 @@ h2{
     padding-top: 25px;
     padding-bottom: 25px;
     line-height: 2em;
-   
   }
 
   #profiles {
@@ -315,148 +411,165 @@ h2{
   .logos {
     margin-top: 100px;
   }
+
+  .items{
+    background-position: center;
+  }
 }
 
-@media(min-width:701px){
 
-   .wrapper{
-       grid-template-rows: 600px 1500px 700px 300px 300px ;
-   }
-   header{
-     background-image: url("images/desktop/image-header.jpg");
-   background-size: cover;
-   background-position: center;
-    }
-    .logo{
-      margin: 25px;
-    }
-    #arrow{
-      margin: 100px auto;
-    }
-  h1{
+@media (min-width: 701px) {
+  .wrapper {
+    grid-template-rows: 600px 1500px 700px 300px 300px;
+  }
+  header {
+    background-image: url("images/desktop/image-header.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .logo {
+    margin: 25px;
+  }
+  #arrow {
+    margin: 100px auto;
+  }
+  h1 {
     text-align: center;
   }
-#transform-img{
-  background-image: url("images/desktop/image-transform.jpg");
-}
-#stand-out .img {
-  background-image: url("images/desktop/image-stand-out.jpg");
-}
-.img{
-  height: 100%;
-  width: 50%;
+  #transform-img {
+    background-image: url("images/desktop/image-transform.jpg");
+  }
+  #stand-out .img {
+    background-image: url("images/desktop/image-stand-out.jpg");
+  }
+  .img {
+    height: 100%;
+    width: 50%;
 
-background-position: center;
-}
+    background-position: center;
+  }
 
-.squares{
-  width: 100%;
-  display: flex;
-  height: 500px;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
-}
-.desc{
-width: 60%;
-}
-.learn,h2{
-  width: 60%;
-}
-#g-p{
-  display: flex;
-}
-.squares:first-child{
-  flex-direction: row-reverse;
-}
-.inner-square{
-  width: 50%;
- display: flex;
- flex-direction: column;
-
-justify-content: center;
-
-align-items: center;
-}
-.desc2{
-  width: 70%;
-}
-#g-p .inner-square{
-  width: 100%;
-  text-align: center;
-}
-#g-design {
-  background-image: url("images/desktop/image-graphic-design.jpg");
-  background-size: cover;
-}
-#photog {
-  background-image: url("images/desktop/image-photography.jpg");
-}
-h2{
-  margin-bottom: 10px;
-}
-#milk {
-  background-image: url("images/desktop/image-gallery-milkbottles.jpg");
-}
-#orange {
-  background-image: url("images/desktop/image-gallery-orange.jpg");
-}
-#ic {
-  background-image: url("images/desktop/image-gallery-cone.jpg");
-}
-#sugar {
-  background-image: url("images/desktop/image-gallery-sugarcubes.jpg");
-}
-#pics{
-  display: flex;
-  width: 100%;
-
-}
-.items{
-  width: 25%;
-  background-size: cover;
-  background-position: center;
-}
-.t-desc{
-line-height: 25px;
-  text-align: center;
-  width: 85%;
-}
-.tes{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#clients{
+  .squares {
+    width: 100%;
+    display: flex;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .desc {
+    width: 60%;
+  }
+  .learn,
+  h2 {
+    width: 60%;
+  }
+  .inner-square .learn{
  
-padding: 100px 50px;
+   align-self:flex-start;
+   margin-left: 20%;
+  }
+  #g-p {
+    display: flex;
+  }
+  .squares:first-child {
+    flex-direction: row-reverse;
+  }
+  .inner-square {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 
+    justify-content: center;
 
-}
-#profiles{
-  margin-top: 60px;  height: 100%;
+    align-items: center;
+  }
   
-}
-#tes-header{
-text-align: center;
-}
-footer{
-  padding: 40px;
-}
-#footer-nav{
-  margin-top: 30px;
-  margin-bottom: 100px;
+  .desc2 {
+    width: 70%;
+  }
+  #g-p .inner-square {
+    width: 100%;
+    text-align: center;
+  }
+  #g-design {
+    background-image: url("images/desktop/image-graphic-design.jpg");
+    background-size: cover;
+  }
+  #photog {
+    background-image: url("images/desktop/image-photography.jpg");
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+  #milk {
+    background-image: url("images/desktop/image-gallery-milkbottles.jpg");
+  }
+  #orange {
+    background-image: url("images/desktop/image-gallery-orange.jpg");
+  }
+  #ic {
+    background-image: url("images/desktop/image-gallery-cone.jpg");
+  }
+  #sugar {
+    background-image: url("images/desktop/image-gallery-sugarcubes.jpg");
+  }
+  #pics {
+    display: flex;
+    width: 100%;
+  }
+  #links{
+    width: 20%;
+  }
+  .items {
+    width: 25%;
+    background-size: cover;
+    background-position: center;
+  }
+  .t-desc {
+    line-height: 25px;
+    text-align: center;
+    width: 85%;
+  }
+  .tes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #clients {
+    padding: 100px 50px;
+  }
+  #profiles {
+    margin-top: 60px;
+  }
+  #tes-header {
+    text-align: center;
+  }
+  footer {
+    padding: 40px;
+  }
+  #footer-nav {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    width: 40%;
+  }
+  #footer-logo {
+    text-align: center;
+  }
+  #social {
+    width: 30%;
+  }
+
+  #nav {
+    margin: 20px 10px;
+  }
+
+
+#links{
   width: 40%;
 }
-#footer-logo{
-text-align: center;
-}
-#social{
-  width: 30%;
-}
-
-#nav{
-  margin: 20px 10px;
+#links2{
+  display: none;
 }
 }
