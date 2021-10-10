@@ -212,38 +212,45 @@ h2 {
 #links a:hover {
   background-color: rgba(255, 255, 255, 0.199);
 }
+#firstl{
+  position: relative;
+}
+#firstl:after {
+  width: 110px;
+  height: 5px;
+  bottom: 0;
+  transform: translate(-95%,-25%);
+  content: "";
+  position: absolute;
+  background:
+    hsla(51, 100%, 49%, 0.3);
+  border-radius: 20px;
+  z-index: -1;
+}
+#firstl:hover::after{
+  background:
+  hsla(51, 100%, 49%);
+}
+#secondl:after {
+  background: hsl(7, 99%, 70%, 0.3);
+    width: 110px;
+    height: 5px;
+    bottom: 0;
+    transform: translate(-95%,-25%);
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    z-index: -1;
+}
+#secondl{
+  position:relative;
+}
 
-#firstl {
-  background-image: linear-gradient(
-    0deg,
-    hsla(51, 100%, 49%, 0.3) 90%,
-    #ffffff3b 100%
-  );
-}
-#secondl {
-  background-image: linear-gradient(
-    0deg,
-    hsl(7, 99%, 70%, 0.3),
-    90%,
-    #ffffff3b 100%
-  );
+#secondl:hover::after{
+  background: hsl(7, 99%, 70%);
 }
 
-#firstl:hover {
-  background-image: linear-gradient(
-    0deg,
-    hsla(51, 100%, 49%) 90%,
-    #ffffff3b 100%
-  );
-}
-#secondl:hover {
-  background-image: linear-gradient(
-    0deg,
-    hsl(7, 99%, 70%),
-    90%,
-    #ffffff3b 100%
-  );
-}
+
 @media (max-width: 700px) {
   .t-desc {
     padding-top: 15px;
