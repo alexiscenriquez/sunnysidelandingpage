@@ -18,7 +18,7 @@ body {
 .wrapper {
   display: grid;
 }
-.attribution{
+.attribution {
   margin-top: 30px;
 }
 header {
@@ -212,44 +212,45 @@ h2 {
 #links a:hover {
   background-color: rgba(255, 255, 255, 0.199);
 }
-#firstl{
+#firstl {
   position: relative;
 }
 #firstl:after {
   width: 110px;
   height: 5px;
   bottom: 0;
-  transform: translate(-95%,-25%);
+  transform: translate(-95%, -25%);
   content: "";
   position: absolute;
-  background:
-    hsla(51, 100%, 49%, 0.3);
+  background: hsla(51, 100%, 49%, 0.3);
   border-radius: 20px;
   z-index: -1;
 }
-#firstl:hover::after{
-  background:
-  hsla(51, 100%, 49%);
+#firstl:hover::after {
+  background: hsla(51, 100%, 49%);
 }
 #secondl:after {
   background: hsl(7, 99%, 70%, 0.3);
-    width: 110px;
-    height: 5px;
-    bottom: 0;
-    transform: translate(-95%,-25%);
-    content: "";
-    position: absolute;
-    border-radius: 20px;
-    z-index: -1;
+  width: 110px;
+  height: 5px;
+  bottom: 0;
+  transform: translate(-95%, -25%);
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  z-index: -1;
 }
-#secondl{
-  position:relative;
+#secondl {
+  position: relative;
 }
 
-#secondl:hover::after{
+#secondl:hover::after {
   background: hsl(7, 99%, 70%);
 }
-
+#contact1 {
+  background-color: white;
+  color: var(--vdDesat) !important;
+}
 
 @media (max-width: 700px) {
   .t-desc {

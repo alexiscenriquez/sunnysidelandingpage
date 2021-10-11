@@ -9,7 +9,7 @@ function windowResize() {
     icon = document.querySelector("#icon");
   } else {
     nav.innerHTML = `<a href="">About</a><a href="">Services</a><a href="">Projects</a
-  ><a href="">Contact</a>`;
+  ><a href="" id="contact1">Contact</a>`;
   }
 }
 window.addEventListener("load", windowResize);
